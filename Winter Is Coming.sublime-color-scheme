@@ -1,0 +1,429 @@
+{
+  "name": "Winter Is Coming",
+  "author": "",
+  "globals": {
+    "background": "#001628",
+    "foreground": "#a7dbf7",
+    "caret": "#a7dbf7",
+    "block_caret": "#a7dbf7",
+    "line_highlight": "#0c499477",
+    "misspelling": "#ef5350",
+    "fold_marker": "#ffffff",
+    "accent": "#ffffff",
+    "gutter": "#001628",
+    "gutter_foreground": "#219fd5",
+    "line_diff_added": "#99b76d23",
+    "line_diff_modified": "#219fd5",
+    "line_diff_deleted": "#ef535033",
+    "selection": "#103362",
+    "inactive_selection": "#0e293f",
+    "inactive_selection_foreground": "#5f7e97",
+    "highlight": "#103362",
+    "find_highlight": "#103362",
+    "find_highlight_foreground": "#ffffff",
+    "guide": "#0e2c45",
+    "active_guide": "",
+    "stack_guide": "",
+    "brackets_foreground": "#4373c2",
+    "tags_foreground": "#4373c2",
+    "shadow": "#219fd5"
+  },
+  "variables": {
+    "black": "#282822",
+    "white": "",
+    "red": "",
+    "green": "",
+    "yellow": "",
+    "orange": "",
+    "blue": "",
+    "magenta": "",
+    "cyan": ""
+  },
+  "rules": [
+    {
+      "foreground": "#bce7ff",
+      "font_style": 0
+    },
+    {
+      "foreground": "#EEFFFF",
+      "font_style": 0,
+      "scope": "meta.paragraph.markdown, string.other.link.description.title.markdown"
+    },
+    {
+      "foreground": "#5ABEB0",
+      "font_style": 0,
+      "scope": "entity.name.section.markdown, punctuation.definition.heading.markdown"
+    },
+    {
+      "foreground": "#82AAFF",
+      "font_style": 0,
+      "scope": "punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown, markup.quote.markdown"
+    },
+    {
+      "foreground": "#82AAFF",
+      "font_style": "italic",
+      "scope": "markup.quote.markdown"
+    },
+    {
+      "foreground": "#57cdff",
+      "font_style": "bold",
+      "scope": "markup.bold.markdown, punctuation.definition.bold.markdown"
+    },
+    {
+      "foreground": "#C792EA",
+      "font_style": "italic",
+      "scope": "markup.italic.markdown, punctuation.definition.italic.markdown"
+    },
+    {
+      "foreground": "#f7ecb5",
+      "font_style": "italic",
+      "scope": "markup.inline.raw.string.markdown, markup.fenced_code.block.markdown"
+    },
+    {
+      "foreground": "#f3b8c2",
+      "font_style": 0,
+      "scope": "punctuation.definition.metadata.markdown"
+    },
+    {
+      "foreground": "#6dbdfa",
+      "font_style": 0,
+      "scope": "markup.underline.link.image.markdown, markup.underline.link.markdown"
+    },
+    {
+      "name": "Comment",
+      "foreground": "#999999",
+      "font_style": "italic",
+      "scope": "comment"
+    },
+    {
+      "name": "Quotes",
+      "foreground": "#6bff81",
+      "font_style": 0,
+      "scope": "punctuation.definition.string"
+    },
+    {
+      "name": "String",
+      "foreground": "#bcf0c0",
+      "font_style": 0,
+      "scope": "string"
+    },
+    {
+      "name": "String Quoted",
+      "foreground": "#bcf0c0",
+      "font_style": "",
+      "scope": "string.quoted, variable.other.readwrite.js"
+    },
+    {
+      "name": "Number",
+      "foreground": "#8dec95",
+      "font_style": 0,
+      "scope": "constant.numeric"
+    },
+    {
+      "name": "Boolean",
+      "foreground": "#8dec95",
+      "font_style": 0,
+      "scope": "constant.language.boolean"
+    },
+    {
+      "name": "Constant",
+      "foreground": "#A170C6",
+      "font_style": 0,
+      "scope": "constant"
+    },
+    {
+      "name": "Built-in constant",
+      "foreground": "#92b6f4",
+      "font_style": 0,
+      "scope": "constant.language, punctuation.definition.constant, variable.other.constant"
+    },
+    {
+      "name": "User-defined constant",
+      "foreground": "#82AAFF",
+      "font_style": 0,
+      "scope": "constant.character, constant.other"
+    },
+    {
+      "name": "Variable",
+      "foreground": "#a4ceee",
+      "font_style": "italic",
+      "scope": "variable"
+    },
+    {
+      "name": "JavaScript Other Variable",
+      "foreground": "#d6deeb",
+      "font_style": "italic",
+      "scope": "variable.other.object.js"
+    },
+    {
+      "name": "TypeScript[React] Variables and Object Properties",
+      "foreground": "#d6deeb",
+      "font_style": 0,
+      "scope": "variable.other.readwrite.alias.ts, variable.other.readwrite.alias.tsx, variable.other.readwrite.ts, variable.other.readwrite.tsx, variable.other.object.ts, variable.other.object.tsx, variable.object.property.ts, variable.object.property.tsx, variable.other.ts, variable.other.tsx, variable.tsx, variable.ts"
+    },
+    {
+      "name": "TypeScript Classes",
+      "foreground": "#d29ffcff",
+      "font_style": 0,
+      "scope": "meta.class entity.name.type.class.tsx"
+    },
+    {
+      "name": "TypeScript Entity Name Type",
+      "foreground": "#d29ffcff",
+      "font_style": 0,
+      "scope": "entity.name.type.tsx, entity.name.type.module.tsx"
+    },
+    {
+      "name": "TypeScript Method Declaration e.g. `constructor`",
+      "foreground": "#a1bde6",
+      "font_style": 0,
+      "scope": "meta.method.declaration storage.type.ts, meta.method.declaration storage.type.tsx"
+    },
+    {
+      "name": "Variable Property Other object property",
+      "foreground": "#f7ecb5",
+      "font_style": "italic",
+      "scope": "variable.other.object.property"
+    },
+    {
+      "name": "Variable Instances",
+      "foreground": "#7fdbca",
+      "font_style": 0,
+      "scope": "variable.instance, variable.other.instance, variable.readwrite.instance, variable.other.readwrite.instance, variable.other.property"
+    },
+    {
+      "name": "JavaScript Variable Other ReadWrite",
+      "foreground": "#d7dbe0",
+      "font_style": 0,
+      "scope": "variable.other.readwrite.js, variable.parameter"
+    },
+    {
+      "name": "Template Strings",
+      "foreground": "#c63ed3",
+      "font_style": 0,
+      "scope": "string.template meta.template.expression"
+    },
+    {
+      "name": "Backtics(``) in Template Strings",
+      "foreground": "#fff",
+      "font_style": 0,
+      "scope": "string.template punctuation.definition.string"
+    },
+    {
+      "name": "Storage",
+      "foreground": "#6dbdfa",
+      "font_style": "",
+      "scope": "storage"
+    },
+    {
+      "name": "Keywords and Storage types",
+      "foreground": "#00bff9",
+      "font_style": "italic",
+      "scope": "keyword, storage.type, storage.modifier, variable.language.this"
+    },
+    {
+      "name": "Keywords operators",
+      "foreground": "#00bff9",
+      "font_style": "italic",
+      "scope": "keyword.operator"
+    },
+    {
+      "name": "Storage",
+      "foreground": "#c792ea",
+      "font_style": "italic",
+      "scope": "storage, meta.var.expr, meta.class meta.method.declaration meta.var.expr storage.type.js, storage.type.property.js, storage.type.property.ts"
+    },
+    {
+      "name": "JavaScript module imports and exports",
+      "foreground": "#d3eed6",
+      "font_style": 0,
+      "scope": "variable.other.meta.import.js, meta.import.js variable.other, variable.other.meta.export.js, meta.export.js variable.other"
+    },
+    {
+      "name": "Class name",
+      "foreground": "#f7ecb5",
+      "font_style": 0,
+      "scope": "entity.name.class"
+    },
+    {
+      "name": "Inherited class",
+      "foreground": "#4FB4D8",
+      "font_style": "",
+      "scope": "entity.other.inherited-class"
+    },
+    {
+      "name": "Variables, Let and Const",
+      "foreground": "#f7ecb5",
+      "font_style": "",
+      "scope": "variable.other.readwrites, meta.definition.variable"
+    },
+    {
+      "name": "Support Variable Property",
+      "foreground": "#7fdbca",
+      "font_style": 0,
+      "scope": "support.variable.property"
+    },
+    {
+      "name": "Function name",
+      "foreground": "#87aff4",
+      "font_style": "italic",
+      "scope": "entity.name.function"
+    },
+    {
+      "name": "Function argument",
+      "foreground": "#d7dbe0",
+      "font_style": "",
+      "scope": "variable.parameter"
+    },
+    {
+      "name": "Tag name",
+      "foreground": "#6dbdfa",
+      "font_style": "",
+      "scope": "entity.name.tag"
+    },
+    {
+      "name": "Entity Name Type",
+      "foreground": "#d29ffc",
+      "font_style": 0,
+      "scope": "entity.name.type"
+    },
+    {
+      "name": "Tag attribute",
+      "foreground": "#f7ecb5",
+      "font_style": "italic",
+      "scope": "entity.other.attribute-name"
+    },
+    {
+      "name": "Meta - Decorator",
+      "foreground": "#f7ecb5",
+      "font_style": "italic",
+      "scope": "punctuation.decorator"
+    },
+    {
+      "name": "Punctuation/Brackets/Tags",
+      "foreground": "#ffffff",
+      "font_style": 0,
+      "scope": "punctuation.definition.block, punctuation.definition.tag"
+    },
+    {
+      "name": "Library function",
+      "foreground": "#f7ecb5",
+      "font_style": "",
+      "scope": "support.function"
+    },
+    {
+      "name": "Library constant",
+      "foreground": "#ec9cd2",
+      "font_style": "",
+      "scope": "support.constant"
+    },
+    {
+      "name": "Library class/type",
+      "foreground": "#7fdbca",
+      "font_style": 0,
+      "scope": "support.type, support.class"
+    },
+    {
+      "name": "Library variable",
+      "foreground": "#CBCDD2",
+      "font_style": 0,
+      "scope": "support.other.variable"
+    },
+    {
+      "name": "Invalid",
+      "foreground": "#6dbdfa",
+      "font_style": " italic bold underline",
+      "scope": "invalid"
+    },
+    {
+      "name": "Invalid deprecated",
+      "foreground": "#6dbdfa",
+      "font_style": " bold italic underline",
+      "scope": "invalid.deprecated"
+    },
+    {
+      "name": "JSON Property Names",
+      "foreground": "#91dacd",
+      "font_style": 0,
+      "scope": "support.type.property-name.json"
+    },
+    {
+      "name": "JSON Support Constants",
+      "foreground": "#addb67",
+      "font_style": 0,
+      "scope": "support.constant.json"
+    },
+    {
+      "name": "JSON Property values (string)",
+      "foreground": "#e0aff5",
+      "font_style": 0,
+      "scope": "meta.structure.dictionary.value.json string.quoted.double"
+    },
+    {
+      "name": "Strings in JSON values",
+      "foreground": "#80CBC4",
+      "font_style": 0,
+      "scope": "string.quoted.double.json punctuation.definition.string.json"
+    },
+    {
+      "name": "Specific JSON Property values like null",
+      "foreground": "#f29fd8",
+      "font_style": 0,
+      "scope": "meta.structure.dictionary.json meta.structure.dictionary.value constant.language"
+    },
+    {
+      "name": "[JSON] - Support",
+      "foreground": "#6dbdfa",
+      "font_style": 0,
+      "scope": "source.json support"
+    },
+    {
+      "name": "[JSON] - String",
+      "foreground": "#ece7cd",
+      "font_style": 0,
+      "scope": "source.json string, source.json punctuation.definition.string"
+    },
+    {
+      "name": "Lists",
+      "foreground": "#6dbdfa",
+      "font_style": 0,
+      "scope": "markup.list"
+    },
+    {
+      "name": "Headings",
+      "foreground": "#4FB4D8",
+      "font_style": "",
+      "scope": "markup.heading punctuation.definition.heading, entity.name.section"
+    },
+    {
+      "name": "Support",
+      "foreground": "#78bd65",
+      "font_style": 0,
+      "scope": "text.html.markdown meta.paragraph meta.link.inline, text.html.markdown meta.paragraph meta.link.inline punctuation.definition.string.begin.markdown, text.html.markdown meta.paragraph meta.link.inline punctuation.definition.string.end.markdown"
+    },
+    {
+      "name": "[Markdown] text ",
+      "foreground": "#ffffff",
+      "font_style": 0,
+      "scope": "meta.paragraph.markdown"
+    },
+    {
+      "name": "Quotes",
+      "foreground": "#78bd65",
+      "font_style": "italic",
+      "scope": "markup.quote"
+    },
+    {
+      "name": "Link Url",
+      "foreground": "#78BD65",
+      "font_style": 0,
+      "scope": "meta.link"
+    },
+    {
+      "name": "Dockerfile",
+      "foreground": "#99d0f7",
+      "font_style": 0,
+      "scope": "source.dockerfile"
+    }
+  ]
+}
